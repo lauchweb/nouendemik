@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NOU ANDEMIK</title>
+
+  <meta
+    name="description"
+    content="NOU ANDEMIK"
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://nouandemik.site.com/"
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NOU ANDEMIK">
+  <meta
+    property="og:description"
+    content="NOU ANDEMIK"
+  >
+  <meta
+    property="og:url"
+    content="https://nouandemik.site.com/"
+  >
+  <meta
+    property="og:image"
+    content="https://site.com/og.jpg"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NOU ANDEMIK">
+  <meta
+    name="twitter:description"
+    content="NOU ANDEMIK"
+  >
+  <meta
+    name="twitter:image"
+    content="https://site.com/og.jpg"
+  >
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --text: #171717;
+
+      --page-margin: clamp(20px, 4vw, 64px);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-width: 320px;
+      background: var(--background);
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100svh;
+
+      background: var(--background);
+      color: var(--text);
+
+      font-family:
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site {
+      min-height: 100svh;
+
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+
+      padding:
+        var(--page-margin)
+        var(--page-margin)
+        calc(var(--page-margin) * 0.8);
+    }
+
+    /* -------------------------
+       Header
+    ------------------------- */
+
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .wordmark,
+    .menu-link {
+      color: var(--text);
+
+      font-size: 14px;
+      line-height: 1;
+
+      font-weight: 400;
+      letter-spacing: 0.08em;
+
+      text-decoration: none;
+    }
+
+    /* -------------------------
+       Main
+    ------------------------- */
+
+    main {
+      min-height: 0;
+    }
+
+    /* -------------------------
+       Footer
+    ------------------------- */
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      align-items: end;
+
+      color: var(--text);
+
+      font-size: 10px;
+      line-height: 1.2;
+
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .wordmark:focus-visible,
+    .menu-link:focus-visible,
+    .footer a:focus-visible {
+      outline: 1px solid var(--text);
+      outline-offset: 4px;
+    }
+
+    .footer-dot {
+      user-select: none;
+    }
+
+    /* -------------------------
+       Mobile
+    ------------------------- */
+
+    @media (max-width: 600px) {
+      :root {
+        --page-margin: 20px;
+      }
+
+      .wordmark,
+      .menu-link {
+        font-size: 14px;
+      }
+
+      .footer {
+        font-size: 10px;
+      }
+
+      .footer-right {
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .footer {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .footer-right {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 340px) {
+      :root {
+        --page-margin: 16px;
+      }
+
+      .wordmark,
+      .menu-link {
+        font-size: 13px;
+      }
+
+      .footer {
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="site">
+
+    <header class="header">
+
+      <a
+        class="wordmark"
+        href="https://site.com/"
+        aria-label="NOU ANDEMIK home"
+      >
+        NOU ANDEMIK
+      </a>
+
+      <a
+        class="menu-link"
+        href="https://nursery.site.com/"
+        aria-label="Nursery"
+      >
+        NURSERY
+      </a>
+
+    </header>
+
+
+    <main>
+      <!-- Main content will be added here -->
+    </main>
+
+
+    <footer class="footer">
+
+      <div class="footer-left">
+        <span>© 2026</span>
+        <span>ANDEMIK</span>
+      </div>
+
+      <nav
+        class="footer-right"
+        aria-label="Legal"
+      >
+        <a href="/terms.html">Terms</a>
+
+        <span
+          class="footer-dot"
+          aria-hidden="true"
+        >·</span>
+
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
